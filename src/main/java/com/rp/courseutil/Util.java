@@ -45,4 +45,12 @@ public class Util {
         return new DefaultSubscriber(name);
     }
 
+    public static void print(Object o) {
+        System.out.println(getThread() + o);
+    }
+
+    public static String getThread() {
+        return "[" + Thread.currentThread().getName()  + "] ";
+    }
+
 }
